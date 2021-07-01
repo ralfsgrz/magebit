@@ -15,4 +15,4 @@ To run **magebit_task3** the folder has to be placed on a local web server with 
 1. Edit the database connection data in ``magebit_task3/db/database.php``.
 2. Run the database initialization file ``magebit_task3/db/install.php`` in a browser (ex.: http://localhost/magebit_task3/db/install.php).
 
-If the database with table is created, a success message will be displayed. To see the front page, open ``index.php`` in the browser, and to see the table with subscriptions - open ``subscriptions.php`` in the browser.
+If the database with table is created, a success message will be displayed. To see the front page, open ``index.php`` in the browser, and to see the table with subscriptions - open ``subscriptions.php`` in the browser. To see the validation errors from PHP on frontpage, JavaScript has to be disabled.
