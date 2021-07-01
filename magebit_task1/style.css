@@ -1,0 +1,356 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+#wrapper{
+    width: 1920px;
+    height: 1080px;
+    background: #FFFFFF;
+    position: relative;
+}
+
+#base-left{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 680px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+
+#base-right{
+    position: absolute;
+    width: 1240px;
+    height: 1080px;
+    left: 680px;
+    top: 0px;
+    background-image: url("./img/image_summer.png");
+}
+
+#top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 102px;
+    width: 480px;
+    height: 40px;
+}
+
+#pineapple{
+    margin: 0 0 4px 11px;
+}
+
+#navigation{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+#nav-item{
+    text-decoration: none;
+    font-family: Arial;
+    color: #6A707B;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin: 10px 1px 0 29px;
+}
+
+#heading, #subheading{
+    text-align: left;
+    width: 400px;
+}
+
+#heading{
+    margin-bottom: 0;
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+#subheading{
+    margin-top: 15px;
+    font-family: Arial;
+    color: #6A707B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 211px;
+}
+
+#email-input{
+    margin-top: 34px;
+    left: 92px;
+    display: flex;
+    position: relative;
+}
+
+#pre-input{
+    width: 4px;
+    height: 70px;
+    background-color: #4066A5;
+}
+
+#email{
+    height: 70px;
+    width: 660.5px;
+    box-sizing: border-box;
+    border: 1px solid #E3E3E4;
+    z-index: 999;
+    position: relative;
+    outline: none;
+    font-family: Arial;
+    font-size: 16px;
+    text-indent: 38px;
+}
+
+#email:focus{
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+#email:hover{
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+    border: 1px solid #4066A5;
+}
+
+#arrow{
+    background-color: #ffffff;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    top: 27px;
+    right: 35px;
+    z-index: 999;
+}
+
+#information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tos{
+    margin-top: 53px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#terms{
+    width: 26px;
+    height: 26px;
+    margin: 0 15px 0 0;
+}
+
+#terms-text{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6A707B;
+}
+
+#terms-text a{
+    color: black;
+}
+
+#terms-text a:hover{
+    color: #4066A5;
+}
+
+#terms-text a:active{
+    color: #233759;
+}
+
+#line{
+    width: 400px;
+    height: 1px;
+    border: 0;
+    background-color: #E3E3E4;
+    margin-top: 50px;
+}
+
+#socials{
+    margin-top: 42px;
+    display: flex;
+}
+
+#facebook, #instagram, #twitter, #youtube{
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #E2E3E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #13182130;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+#facebook:hover, #facebook:active, #instagram:hover, #instagram:active,
+#twitter:hover, #twitter:active, #youtube:hover, #youtube:active{
+    color: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+#facebook:hover{
+    background-color: #4267B2;
+    border: 2px solid #4267B2;
+}
+
+#facebook:active{
+    background-color: #2F4A80;
+    border: 2px solid #2F4A80;
+}
+
+#instagram:hover{
+    background-color: #C13584;
+    border: 2px solid #C13584;
+}
+
+#instagram:active{
+    background-color: #8F2762;
+    border: 2px solid #8F2762;
+}
+
+#twitter:hover{
+    background-color: #1DA1F2;
+    border: 2px solid #1DA1F2;
+}
+
+#twitter:active{
+    background-color: #177FBF;
+    border: 2px solid #177FBF;
+}
+
+#youtube:hover{
+    background-color: #FF0000;
+    border: 2px solid #FF0000;
+}
+
+#youtube:active{
+    background-color: #CC0000;
+    border: 2px solid #CC0000;
+}
+
+
+
+/* for mobile */
+@media only screen and (max-width: 768px) {
+
+    #wrapper{
+        background-image: url("./img/image_summer.png");
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    
+    #base-left{
+        position: static;
+        background: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #top{
+        width: 100%;
+        height: 66px;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+    }
+
+    #top-bar{
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        background: #FFFFFF;
+        justify-content: space-between;
+    }
+
+    #nav-item, #subheading{
+        font-size: 14px;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+        height: auto;
+        width: 80%;
+        margin-top: 150px;
+        padding: 50px 20px;
+    }
+
+    #information{
+        width: 90%;
+    }
+
+    #heading, #subheading{
+        margin: 0;
+        width: 90%;
+    }
+
+    #heading{
+        font-size: 24px;
+    }
+
+    #email-input{
+        left: 0;
+        width: 100%;
+    }
+
+    #pre-input{
+        width: 4px;
+        height: 60px;
+        background-color: #4066A5;
+    }
+
+    #email{
+        height: 60px;
+        width: 100%;
+        text-indent: 14px;
+    }
+
+    #arrow{
+        top: 24px;
+        right: 25px;
+    }
+    
+    #tos{
+        width: 100%;
+    }
+
+    #tos, #line, #socials{
+        margin-top: 25px;
+    }
+
+    #pineapple, #base-right{
+        display: none;
+    }
+    
+  }
+

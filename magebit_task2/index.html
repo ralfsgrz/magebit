@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mid/Junior - Web Developer Test | Task 2</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="base-left">
+            <div id="top">
+                <div id="top-bar">
+                    <div id="logo-pineapple">
+                        <img id="union" src="./img/Union.png" alt="pineapple">
+                        <img id="pineapple" src="./img/pineapple..png" alt="pineapple-text">
+                    </div>
+                    <div id="navigation">
+                        <a id="nav-item" href="#">About</a>
+                        <a id="nav-item" href="#">How it works</a>
+                        <a id="nav-item" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div id="success"><img id="trophy" src="./img/ic_success.svg" alt="" /></div>
+                <h1 id="heading">Subscribe to newsletter</h1>
+                <h3 id="subheading">Subscribe to our newsletter and get 10% discount on pineapple glasses.</h3>
+                <form id="form" action="/" method="GET">
+                    <div id="information">
+                        <div id="email-input">
+                            <div id="pre-input"></div>
+                            <input id="email" type="text" placeholder="Type your email address here..."/>
+                            <button id="arrow"><img  src="./img/ic_arrow.svg" alt="arrow" /></button>
+                        </div>
+                        <div class="error e-error"></div>
+                        <div id="tos">
+                            <input id="terms" type="checkbox" />
+                            <label id="terms-text" for="terms">I agree to <a href="#">terms of service</a></label>
+                        </div>
+                        <div class="error t-error"></div>
+                    </div>
+                </form>
+                <hr id="line">
+                <div id="socials">
+                    <a id="facebook" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a id="instagram" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a id="twitter" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a id="youtube" href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="base-right">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
